@@ -24,3 +24,6 @@ ReactDOM.render(
   <App />,
   document.getElementById('root')
 );
+
+import track from './analytics';
+track();
