@@ -19,12 +19,14 @@ const Wrapper = styled.div`
 const Image = styled.img`
   width: 100%;
   max-width: 600px;
-  margin-bottom: 2em;
+  margin-bottom: 4em;
+  border-radius: 2px;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.5);
 `;
 
-const Logo = styled(Image)`
+const Logo = styled.img`
+  width: 100%;
   max-width: 125px;
-  margin-bottom: 0;
 `;
 
 const Tagline = styled.h1`
