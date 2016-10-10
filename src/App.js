@@ -24,7 +24,7 @@ const Image = styled.img`
 `;
 
 const Logo = styled(Image)`
-  max-width: 100px;
+  max-width: 125px;
   margin-bottom: 0;
 `;
 
@@ -35,10 +35,10 @@ const Tagline = styled.h1`
   line-height: 1.5em;
   font-weight: 400;
   margin: 2em 0;
+`;
 
-  &:first-line {
-    font-weight: bold;
-  }
+const Bold = styled.span`
+  font-weight: bold;
 `;
 
 const Link = styled.a`
@@ -51,11 +51,16 @@ const Button = styled(Link)`
   border-radius: 3px;
   padding: 0.5em 2em;
   text-decoration: none;
+  font-size: 1em;
+  margin: 0 1em;
+
+  background: ${(props) => props.primary && 'palevioletred'};
+  color: ${(props) => props.primary ? 'white' : 'palevioletred'};
 `;
 
 const Footer = styled.p`
   margin-top: auto;
-  padding-top: 3em;
+  padding-top: 5em;
 `;
 
 class App extends Component {
@@ -63,9 +68,12 @@ class App extends Component {
     return (
       <Wrapper>
         <Logo src={logo} alt="styled-components" />
-        <Tagline>Visual primitives for the component age.<br />Use the best bits of ES6 and CSS to style your apps without stress 💅</Tagline>
+        <Tagline><Bold>Visual primitives for the component age.</Bold><br />Use the best bits of ES6 and CSS to style your apps without stress 💅</Tagline>
         <Image src={code} alt="Code sample of styled-components" />
-        <Button href="https://github.com/styled-components/styled-components" target="_blank">Github</Button>
+        <div>
+          <Button href="https://github.com/styled-components/styled-components" target="_blank" primary>Github</Button>
+          <Button href="http://www.webpackbin.com/V1VNoINA-" target="_blank">Try it out!</Button>
+        </div>
         <Footer>
           Made by <Link href="https://twitter.com/glenmaddern" bold target="_blank">@glenmaddern</Link> and <Link href="https://twitter.com/mxstbr" bold target="_blank">@mxstbr</Link>
         </Footer>
