@@ -2,22 +2,30 @@ import React, { Component } from 'react';
 import styled from 'styled-components';
 
 import logo from './logo.png';
+import code from './code-atom.png';
 import { colors } from './constants';
 
 const Wrapper = styled.div`
   width: 100%;
-  min-height: 75vh;
+  min-height: calc(100vh - 5em);
   background-color: ${colors.secondary};
   display: flex;
   flex-direction: column;
   align-items: center;
   color: ${colors.primary};
   font-family: "Avenir Next", sans-serif;
-  padding-top: 25vh;
+  padding-top: 5em;
 `;
 
-const Logo = styled.img`
+const Image = styled.img`
+  width: 100%;
+  max-width: 600px;
+  margin-bottom: 2em;
+`;
+
+const Logo = styled(Image)`
   max-width: 100px;
+  margin-bottom: 0;
 `;
 
 const Tagline = styled.h1`
@@ -45,10 +53,6 @@ const Button = styled(Link)`
   text-decoration: none;
 `;
 
-const Code = styled.code`
-  font-family: monaco, Consolas, "Lucida Console", monospace;
-`;
-
 const Footer = styled.p`
   margin-top: auto;
   padding-top: 3em;
@@ -60,6 +64,7 @@ class App extends Component {
       <Wrapper>
         <Logo src={logo} alt="styled-components" />
         <Tagline>Visual primitives for the component age.<br />Use the best bits of ES6 and CSS to style your apps without stress 💅</Tagline>
+        <Image src={code} alt="Code sample of styled-components" />
         <Button href="https://github.com/styled-components/styled-components" target="_blank">Github</Button>
         <Footer>
           Made by <Link href="https://twitter.com/glenmaddern" bold target="_blank">@glenmaddern</Link> and <Link href="https://twitter.com/mxstbr" bold target="_blank">@mxstbr</Link>
