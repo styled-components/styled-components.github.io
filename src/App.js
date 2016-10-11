@@ -72,7 +72,7 @@ class App extends Component {
         <Tagline><Bold>Visual primitives for the component age.</Bold><br />Use the best bits of ES6 and CSS to style your apps without stress 💅</Tagline>
         <Image src={`${process.env.PUBLIC_URL}/code-atom.png`} alt="Code sample of styled-components" />
         <div>
-          <Button href="https://github.com/styled-components/styled-components" target="_blank" primary>Github</Button>
+          <Button href="https://github.com/styled-components/styled-components" target="_blank" primary>GitHub</Button>
           <Button href="http://www.webpackbin.com/V1VNoINA-" target="_blank">Try it out!</Button>
         </div>
         <Footer>
