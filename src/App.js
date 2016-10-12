@@ -16,12 +16,16 @@ const Wrapper = styled.div`
   padding-top: 5em;
 `;
 
+const imageMargin = '1';
+
 const Image = styled.img`
-  width: 100%;
+  width: calc(100% - ${imageMargin * 2}em);
   max-width: 600px;
   margin-bottom: 4em;
   border-radius: 2px;
   box-shadow: 0 8px 25px rgba(0, 0, 0, 0.5);
+  margin-left: ${imageMargin}em;
+  margin-right: ${imageMargin}em;
 `;
 
 const Logo = styled.img`
