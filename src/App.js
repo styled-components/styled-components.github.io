@@ -77,7 +77,7 @@ class App extends Component {
         <Image src={`${process.env.PUBLIC_URL}/code-atom.png`} alt="Code sample of styled-components" />
         <div>
           <Button href="https://github.com/styled-components/styled-components" target="_blank" primary>GitHub</Button>
-          <Button href="http://www.webpackbin.com/V1VNoINA-" target="_blank">Try it out!</Button>
+          <Button href="https://www.webpackbin.com/bins/-KeeZCr0xKfutOfOujxN" target="_blank">Try it out!</Button>
         </div>
         <Footer>
           Made by <Link href="https://twitter.com/glenmaddern" bold target="_blank">@glenmaddern</Link> and <Link href="https://twitter.com/mxstbr" bold target="_blank">@mxstbr</Link>
