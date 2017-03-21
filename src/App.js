@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import styled from 'styled-components';
 
-import logo from './logo.png';
 import { colors } from './constants';
 
 const Wrapper = styled.div`
@@ -72,7 +71,7 @@ class App extends Component {
   render() {
     return (
       <Wrapper>
-        <Logo src={logo} alt="styled-components" />
+        <Logo src="https://raw.githubusercontent.com/styled-components/brand/master/styled-components.png" alt="styled-components" />
         <Tagline><Bold>Visual primitives for the component age.</Bold><br />Use the best bits of ES6 and CSS to style your apps without stress 💅</Tagline>
         <Image src={`${process.env.PUBLIC_URL}/code-atom.png`} alt="Code sample of styled-components" />
         <div>
