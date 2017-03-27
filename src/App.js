@@ -58,7 +58,7 @@ const Button = styled(Link)`
   font-size: 1em;
   margin: 0 1em;
 
-  background: ${(props) => props.primary && 'palevioletred'};
+  ${(props) => props.primary && 'background: palevioletred'};
   color: ${(props) => props.primary ? 'white' : 'palevioletred'};
 `;
 
